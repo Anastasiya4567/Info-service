@@ -1,0 +1,16 @@
+server:
+  error:
+    whitelabel:
+      enabled: true
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
+  port: 8080
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: basic
+
+github-host: https://api.github.com/users
