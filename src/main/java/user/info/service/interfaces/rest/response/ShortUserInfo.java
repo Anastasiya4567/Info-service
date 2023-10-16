@@ -1,7 +1,10 @@
 package user.info.service.interfaces.rest.response;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.time.OffsetDateTime;
 
+@JsonInclude()
 public class ShortUserInfo {
 
     private long id;

@@ -2,13 +2,12 @@ package user.info.service.infrastructure.adapter.rest;
 
 import static org.apache.logging.log4j.LogManager.getLogger;
 
-import user.info.service.infrastructure.port.InfoServicePort;
-
-import user.info.service.infrastructure.adapter.rest.response.CompleteUserInfo;
-
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import user.info.service.infrastructure.adapter.rest.response.CompleteUserInfo;
+import user.info.service.infrastructure.port.InfoServicePort;
 
 @Component
 public class InfoServiceHTTPSender implements InfoServicePort {

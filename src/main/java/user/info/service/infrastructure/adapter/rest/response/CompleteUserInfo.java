@@ -1,41 +1,105 @@
 package user.info.service.infrastructure.adapter.rest.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.OffsetDateTime;
 
 public class CompleteUserInfo {
 
+    @JsonProperty("login")
     private String login;
+
+    @JsonProperty("id")
     private long id;
-    private String node_id;
-    private String avatar_url;
-    private String gravatar_id;
+
+    @JsonProperty("node_id")
+    private String nodeId;
+
+    @JsonProperty("avatar_url")
+    private String avatarUrl;
+
+    @JsonProperty("gravatar_id")
+    private String gravatarId;
+
+    @JsonProperty("url")
     private String url;
-    private String html_url;
-    private String followers_url;
-    private String following_url;
-    private String gists_url;
-    private String starred_url;
-    private String subscriptions_url;
-    private String organizations_url;
-    private String repos_url;
-    private String events_url;
-    private String received_events_url;
+
+    @JsonProperty("html_url")
+    private String htmlUrl;
+
+    @JsonProperty("followers_url")
+    private String followersUrl;
+
+    @JsonProperty("following_url")
+    private String followingUrl;
+
+    @JsonProperty("gists_url")
+    private String gistsUrl;
+
+    @JsonProperty("starred_url")
+    private String starredUrl;
+
+    @JsonProperty("subscriptions_url")
+    private String subscriptionsUrl;
+
+    @JsonProperty("organizations_url")
+    private String organizationsUrl;
+
+    @JsonProperty("repos_url")
+    private String reposUrl;
+
+    @JsonProperty("events_url")
+    private String eventsUrl;
+
+    @JsonProperty("received_events_url")
+    private String receivedEventsUrl;
+
+    @JsonProperty("type")
     private String type;
-    private boolean site_admin;
+
+    @JsonProperty("site_admin")
+    private boolean siteAdmin;
+
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("company")
     private String company;
+
+    @JsonProperty("blog")
     private String blog;
+
+    @JsonProperty("location")
     private String location;
+
+    @JsonProperty("email")
     private String email;
+
+    @JsonProperty("hireable")
     private String hireable;
+
+    @JsonProperty("bio")
     private String bio;
-    private String twitter_username;
-    private long public_repos;
-    private long public_gists;
+
+    @JsonProperty("twitter_username")
+    private String twitterUsername;
+
+    @JsonProperty("public_repos")
+    private long publicRepos;
+
+    @JsonProperty("public_gists")
+    private long publicGists;
+
+    @JsonProperty("followers")
     private long followers;
+
+    @JsonProperty("following")
     private long following;
-    private OffsetDateTime created_at;
-    private OffsetDateTime updated_at;
+
+    @JsonProperty("created_at")
+    private OffsetDateTime createdAt;
+    @JsonProperty("updated_at")
+    private OffsetDateTime updatedAt;
 
     public CompleteUserInfo() {
     }
@@ -48,68 +112,68 @@ public class CompleteUserInfo {
         return id;
     }
 
-    public String getNode_id() {
-        return node_id;
+    public String getNodeId() {
+        return nodeId;
     }
 
-    public String getAvatar_url() {
-        return avatar_url;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
-    public String getGravatar_id() {
-        return gravatar_id;
+    public String getGravatarId() {
+        return gravatarId;
     }
 
     public String getUrl() {
         return url;
     }
 
-    public String getHtml_url() {
-        return html_url;
+    public String getHtmlUrl() {
+        return htmlUrl;
     }
 
-    public String getFollowers_url() {
-        return followers_url;
+    public String getFollowersUrl() {
+        return followersUrl;
     }
 
-    public String getFollowing_url() {
-        return following_url;
+    public String getFollowingUrl() {
+        return followingUrl;
     }
 
-    public String getGists_url() {
-        return gists_url;
+    public String getGistsUrl() {
+        return gistsUrl;
     }
 
-    public String getStarred_url() {
-        return starred_url;
+    public String getStarredUrl() {
+        return starredUrl;
     }
 
-    public String getSubscriptions_url() {
-        return subscriptions_url;
+    public String getSubscriptionsUrl() {
+        return subscriptionsUrl;
     }
 
-    public String getOrganizations_url() {
-        return organizations_url;
+    public String getOrganizationsUrl() {
+        return organizationsUrl;
     }
 
-    public String getRepos_url() {
-        return repos_url;
+    public String getReposUrl() {
+        return reposUrl;
     }
 
-    public String getEvents_url() {
-        return events_url;
+    public String getEventsUrl() {
+        return eventsUrl;
     }
 
-    public String getReceived_events_url() {
-        return received_events_url;
+    public String getReceivedEventsUrl() {
+        return receivedEventsUrl;
     }
 
     public String getType() {
         return type;
     }
 
-    public boolean getSite_admin() {
-        return site_admin;
+    public boolean isSiteAdmin() {
+        return siteAdmin;
     }
 
     public String getName() {
@@ -140,55 +204,83 @@ public class CompleteUserInfo {
         return bio;
     }
 
-    public String getTwitter_username() {
-        return twitter_username;
+    public String getTwitterUsername() {
+        return twitterUsername;
     }
 
-    public float getPublic_repos() {
-        return public_repos;
+    public long getPublicRepos() {
+        return publicRepos;
     }
 
-    public float getPublic_gists() {
-        return public_gists;
+    public long getPublicGists() {
+        return publicGists;
     }
 
-    public float getFollowers() {
+    public long getFollowers() {
         return followers;
     }
 
-    public float getFollowing() {
+    public long getFollowing() {
         return following;
     }
 
-    public OffsetDateTime getCreated_at() {
-        return created_at;
+    public OffsetDateTime getCreatedAt() {
+        return createdAt;
     }
 
-    public OffsetDateTime getUpdated_at() {
-        return updated_at;
+    public OffsetDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
+    }
+
+    public void setCreatedAt(OffsetDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setPublicRepos(long publicRepos) {
+        this.publicRepos = publicRepos;
+    }
+
+    public void setFollowers(long followers) {
+        this.followers = followers;
     }
 
     @Override
     public String toString() {
-        return "UserInfo{" +
+        return "CompleteUserInfo{" +
             "login='" + login + '\'' +
             ", id=" + id +
-            ", node_id='" + node_id + '\'' +
-            ", avatar_url='" + avatar_url + '\'' +
-            ", gravatar_id='" + gravatar_id + '\'' +
+            ", nodeId='" + nodeId + '\'' +
+            ", avatarUrl='" + avatarUrl + '\'' +
+            ", gravatarId='" + gravatarId + '\'' +
             ", url='" + url + '\'' +
-            ", html_url='" + html_url + '\'' +
-            ", followers_url='" + followers_url + '\'' +
-            ", following_url='" + following_url + '\'' +
-            ", gists_url='" + gists_url + '\'' +
-            ", starred_url='" + starred_url + '\'' +
-            ", subscriptions_url='" + subscriptions_url + '\'' +
-            ", organizations_url='" + organizations_url + '\'' +
-            ", repos_url='" + repos_url + '\'' +
-            ", events_url='" + events_url + '\'' +
-            ", received_events_url='" + received_events_url + '\'' +
+            ", htmlUrl='" + htmlUrl + '\'' +
+            ", followersUrl='" + followersUrl + '\'' +
+            ", followingUrl='" + followingUrl + '\'' +
+            ", gistsUrl='" + gistsUrl + '\'' +
+            ", starredUrl='" + starredUrl + '\'' +
+            ", subscriptionsUrl='" + subscriptionsUrl + '\'' +
+            ", organizationsUrl='" + organizationsUrl + '\'' +
+            ", reposUrl='" + reposUrl + '\'' +
+            ", eventsUrl='" + eventsUrl + '\'' +
+            ", receivedEventsUrl='" + receivedEventsUrl + '\'' +
             ", type='" + type + '\'' +
-            ", site_admin=" + site_admin +
+            ", siteAdmin=" + siteAdmin +
             ", name='" + name + '\'' +
             ", company='" + company + '\'' +
             ", blog='" + blog + '\'' +
@@ -196,13 +288,13 @@ public class CompleteUserInfo {
             ", email='" + email + '\'' +
             ", hireable='" + hireable + '\'' +
             ", bio='" + bio + '\'' +
-            ", twitter_username='" + twitter_username + '\'' +
-            ", public_repos=" + public_repos +
-            ", public_gists=" + public_gists +
+            ", twitterUsername='" + twitterUsername + '\'' +
+            ", publicRepos=" + publicRepos +
+            ", publicGists=" + publicGists +
             ", followers=" + followers +
             ", following=" + following +
-            ", created_at='" + created_at + '\'' +
-            ", updated_at='" + updated_at + '\'' +
+            ", createdAt=" + createdAt +
+            ", updatedAt=" + updatedAt +
             '}';
     }
 }
